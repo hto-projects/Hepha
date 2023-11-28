@@ -1,0 +1,75 @@
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="search-page.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        
+        <nav> <!-- Navigation -->
+            <div class="topnav">
+                <a class="active" href="#Home">Home</a>
+                <a href="About/about.html"> Log In </a>
+                <a href="Artifacts/artifacts.html"> Sign Up </a>
+            </div>
+        </nav>
+        <form id="search-selections">
+
+            <h1>Search</h1>
+            <div id="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div id="tuition-selection">
+                <h3>Tuition</h3>
+                <p><input type="checkbox">0-#</p>
+                <p><input type="checkbox">#-#</p>
+                <p><input type="checkbox">#-#</p>
+                <p><input type="checkbox">#-#</p>
+                <p><input type="checkbox">#+</p> <!--Add numbers to select-->
+            </div>
+            <div id="location-selection">
+                <h3>Location</h3>
+                <p><input type="text"></p>
+                <button id="add-location-box">Add Location</button> <!--Add function to button that allows you to add more locations-->
+            </div>
+            <div id="admission-rate-selection">
+                <h3>Admission Rates</h3>
+                <p><input type="checkbox">0-#</p>
+                <p><input type="checkbox">#-#</p>
+                <p><input type="checkbox">#-#</p>
+                <p><input type="checkbox">#-#</p>
+                <p><input type="checkbox">#+</p> <!--Add numbers to select-->
+            </div>
+            <div id="test-score-selection">
+                <h3>Test scores (SAT/ACT)</h3>
+                <p><input type="checkbox">SAT Score: <input type="text"></p> 
+                <p><input type="checkbox">ACT Score: <input type="text"></p> <!--Add a way for it to identify when the number is within the range of scores as well as a way to select which scores you want to include in the search-->
+            </div>
+            <div id="population-selection">
+                <h3>Student Population</h3>
+                <p><input type="checkbox">0-#</p>
+                <p><input type="checkbox">#-#</p>
+                <p><input type="checkbox">#-#</p>
+                <p><input type="checkbox">#-#</p>
+                <p><input type="checkbox">#+</p> <!--Add numbers to select-->
+            </div>
+            <div id="student-to-faculty-selection">
+                <h3>Student/Faculty Rate</h3>
+                <p>Less than <input type="text"> Students per Faculty Member</p> <!--Add way to make sure that it is a number that is entered-->
+            </div>
+            <div id="type-of-school-selection">
+                <h3>Type of School</h3>
+                <select>
+                    <option>Public</option>
+                    <option>Private</option>
+                    <option>Other</option>
+                </select> <!--Add options to select-->
+            </div>
+            <div id="search-button">
+                <button id="select-search">Search</button>
+            </div>
+        </form>
+    </body>
+</html>
