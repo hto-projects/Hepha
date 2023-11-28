@@ -8,7 +8,9 @@
   <meta name="viewport" content="width=device-width">
   <link href="about.css" rel="stylesheet" type="text/css" />
 </head>
-
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+</style>
 <body>
   <script src="about.js"></script>
 
@@ -20,20 +22,21 @@
 
     </nav>
 
-    <form class='login-form' action="/login" method ='post'>
+
+    <div class=Where>        
+      <form class='login-form' action="/search-page.html" method ='post'>
         <div class=container>        
-          <h1 class="title">Sign Up</h1>
+          <h1 class="title">Log In</h1>
       
-          <fieldset class="fieldset" name="Login">
+          <fieldset class="fieldset" name="Log in">
           <label for="email">Email</label>
           <input placeholder='foo@bar.com' type="text" name='email' id='email' />
           <label class="labelThing" for="password">Password</label>
           <input placeholder='password' type="text" name='password' id='password'/>
-          <button class="button" type='Log In'>log in</button>
+          <button class="button" type='Log in'>Log In</button>
         </div>
       </form>
-
-
+    </div>
 </div>
 </body>
 

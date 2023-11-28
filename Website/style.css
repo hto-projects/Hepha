@@ -28,14 +28,25 @@ html {
   
   
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #7e7f7f;
     color: white;
   }
   body {
-    background-color: #9DE0AD;
+    background-color: #191919;
   }
   
   img {  
   width: 500px;  
   height: auto;  
+  }
+
+  p {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif; 
+    
   }
