@@ -36,7 +36,7 @@ function buildQuery() {
     // query_results = "fields=" + 
     query_results = "fields=" + "id," + "school.name." + "latest.student.size," + "school.state," + "school.ft_faculty_rate," + "school.peps_ownership," + "school.price_calculator_url"
 
-    url + query_results + "&" + per_page + "&" + "school.state=" + str(location) + "&" + api_key;
+    url + query_results + "&" + per_page + "&" + "school.state=" + location + "&" + api_key;
 
    
 
