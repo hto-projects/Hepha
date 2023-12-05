@@ -21,44 +21,28 @@
                 <input type="text" placeholder="Search">
             </div>
 
-            <div id="tuition-selection">
-                <h3>Tuition</h3>
-                <p><input type="checkbox">0-#</p>
-                <p><input type="checkbox">#-#</p>
-                <p><input type="checkbox">#-#</p>
-                <p><input type="checkbox">#-#</p>
-                <p><input type="checkbox">#+</p> <!--Add numbers to select-->
-            </div>
             <div id="location-selection">
                 <h3>Location</h3>
                 <p><input type="text"></p>
-                <button id="add-location-box">Add Location</button> <!--Add function to button that allows you to add more locations-->
+                
             </div>
-            <div id="admission-rate-selection">
-                <h3>Admission Rates</h3>
-                <p><input type="checkbox">0-#</p>
-                <p><input type="checkbox">#-#</p>
-                <p><input type="checkbox">#-#</p>
-                <p><input type="checkbox">#-#</p>
-                <p><input type="checkbox">#+</p> <!--Add numbers to select-->
-            </div>
-            <div id="test-score-selection">
-                <h3>Test scores (SAT/ACT)</h3>
-                <p><input type="checkbox">SAT Score: <input type="text"></p> 
-                <p><input type="checkbox">ACT Score: <input type="text"></p> <!--Add a way for it to identify when the number is within the range of scores as well as a way to select which scores you want to include in the search-->
-            </div>
+            
             <div id="population-selection">
                 <h3>Student Population</h3>
-                <p><input type="checkbox">0-#</p>
-                <p><input type="checkbox">#-#</p>
-                <p><input type="checkbox">#-#</p>
-                <p><input type="checkbox">#-#</p>
-                <p><input type="checkbox">#+</p> <!--Add numbers to select-->
+                <p>Min: <input type="text"></p>
+                <p>Max: <input type="text"></p>
             </div>
+
             <div id="student-to-faculty-selection">
                 <h3>Student/Faculty Rate</h3>
-                <p>Less than <input type="text"> Students per Faculty Member</p> <!--Add way to make sure that it is a number that is entered-->
+                <select>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select> 
             </div>
+
             <div id="type-of-school-selection">
                 <h3>Type of School</h3>
                 <select>
@@ -67,9 +51,12 @@
                     <option>Other</option>
                 </select> <!--Add options to select-->
             </div>
+
             <div id="search-button">
+                <h3>Search with these options: </h3>
                 <button id="select-search">Search</button>
             </div>
+
         </form>
     </body>
 </html>
