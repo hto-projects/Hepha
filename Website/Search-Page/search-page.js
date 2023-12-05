@@ -22,11 +22,15 @@ function buildQuery() {
     var location_value = document.getElementById('location_input').value
     school_location = "&" + "school.state=" + location_value
 
-    per_page = "&" + "per_page=" + "3";
+    var population_min = document.getElementById('population_min_input').value
+    var population_max = document.getElementById('population_max_input').value
+    school_population = "&" + "latest.student.size__range=" + population_min + ".." + population_max
+
+    per_page = "&" + "per_page=" + "20";
 
     fields = "fields=" + "id" + "," + "school.name" + "," + "latest.student.size" + "," + "school.state" + "," + "school.ft_faculty_rate" + "," + "school.peps_ownership" + "," + "school.price_calculator_url";
 
-    query_results = url + fields + per_page  + school_location + api_key;
+    query_results = url + fields + per_page  + school_location + school_population + api_key;
 
     console.log(query_results);
     
