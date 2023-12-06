@@ -10,8 +10,7 @@ function getResults() {
   fetch(buildQuery(), requestOptions)
     .then(response => response.json())
     .then(result => {
-      console.log("after call")
-      console.log(result)
+      displayResults(result)
     })
     .catch(error => console.log('error', error));
 }
@@ -28,7 +27,8 @@ function buildQuery() {
 
 // public = 1, private = 2
     var school_type_input = document.getElementById("type-of-school-selection");
-    var selected = school_type_input.options[school_type_input.selectedIndex]
+    //Added .value here because it was just picking up the selection element
+    var selected = school_type_input.options[school_type_input.selectedIndex].value
 
     var selected_translated = '1'
 
@@ -52,3 +52,31 @@ function buildQuery() {
     return query_results;
 }
 
+function displayResults(result) {
+  console.log(result)
+  //Grabbing the list from the html
+  var result_list = document.getElementById('result-list')
+
+  /*
+  Available properties of a college to list:
+  id
+  latest.student.size
+  school.ft_faculty_rate
+  school.name
+  school.ownership
+  school.price_calculator_url
+  school.state
+  */
+
+  //result is the JSON object, results is the array of colleges inside the JSON object
+  //This is an arrow function, but the same principle as a for each loop in java. 
+  result.results.forEach(college => {
+    // Every time you will create a new list element
+    // Build the string you want to display
+    // if you need to grab a property that has a "." in it, you need to do something like college["school.name"] instead of just college.id
+    // The element you created needs the textContent to bet set to the string you want to add to the list. 
+    // Finally you need to appendChild to the result_list with the list element you created
+  });
+
+
+}
