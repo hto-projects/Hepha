@@ -55,12 +55,7 @@ function buildQuery() {
 function displayResults(result) {
   console.log(result);
   //Grabbing the list from the html
-  var result_list = document.getElementById('result-list');
-
-  let resultDisplaySection = document.querySelector("#result-list");
-  let resultDisplay = document.createElement("li");
-  resultDisplay.textContent = result_list;
-
+  
   /*
   Available properties of a college to list:
   id
@@ -75,6 +70,17 @@ function displayResults(result) {
   //result is the JSON object, results is the array of colleges inside the JSON object
   //This is an arrow function, but the same principle as a for each loop in java. 
   result.results.forEach(college => {
+
+    var result_list = document.getElementsByName(result);
+    let resultDisplaySection = document.querySelector("#result-list");
+
+    let resultDisplay = document.createElement("li");
+    resultDisplay.textContent = result_list;
+  
+    let resultContainer = document.querySelector("#result-list");
+    resultContainer.appendChild(resultDisplay);
+
+    
     // Every time you will create a new list element
     // Build the string you want to display
     // if you need to grab a property that has a "." in it, you need to do something like college["school.name"] instead of just college.id
