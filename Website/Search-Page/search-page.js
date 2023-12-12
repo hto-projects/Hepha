@@ -53,9 +53,13 @@ function buildQuery() {
 }
 
 function displayResults(result) {
-  console.log(result)
+  console.log(result);
   //Grabbing the list from the html
-  var result_list = document.getElementById('result-list')
+  var result_list = document.getElementById('result-list');
+
+  let resultDisplaySection = document.querySelector("#result-list");
+  let resultDisplay = document.createElement("li");
+  resultDisplay.textContent = result_list;
 
   /*
   Available properties of a college to list:
