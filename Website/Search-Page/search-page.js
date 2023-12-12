@@ -71,14 +71,21 @@ function displayResults(result) {
   //This is an arrow function, but the same principle as a for each loop in java. 
   result.results.forEach(college => {
 
-    var result_list = document.getElementsByName(result);
-    let resultDisplaySection = document.querySelector("#result-list");
+    var result_list = document.getElementById('result-list');
+    // let resultDisplaySection = document.querySelector("#result-list");
 
-    let resultDisplay = document.createElement("li");
-    resultDisplay.textContent = result_list;
+    // let resultDisplay = document.createElement("li");
+    // resultDisplay.textContent = result_list;
   
-    let resultContainer = document.querySelector("#result-list");
-    resultContainer.appendChild(resultDisplay);
+    // let resultContainer = document.querySelector("#result-list");
+    // resultContainer.appendChild(resultDisplay);
+
+
+console.log(college)
+var display = "School Name: " + college["school.name"] + "\nSchool ID: " + college.id
+var listItem = document.createElement('li');
+listItem.textContent = display;
+result_list.appendChild(listItem)
 
     
     // Every time you will create a new list element
