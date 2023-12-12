@@ -1,27 +1,68 @@
 <!DOCTYPE html>
-<html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-<title>Backstory</title>
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-</style>
-<body>
-  <script src="script.js"></script>
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
 
-  <nav>
-  <div class="topnav">
-  <a class="active" href="#Home">Home</a>
- <a href="About/about.html"> Log In </a>
-  <a href="Artifacts/artifacts.html"> Sign Up </a>
-    
-</nav>
-<p>We help with college! Good Luck on Applications!</p>
-</body>
+      <title>Login</title>
+   </head>
+   <body>
 
+
+
+      <header class="header">
+         <a href="#" class="logo">HEPHA</a>
+
+         <nav class="navbar">
+            <a href="Search-Page/search-page.html">Search</a>
+            <a href="About/about.html">About</a>
+            <a href="indexs.html">Signup</a>
+            <a href="index.html">Login</a>
+         </nav>
+      </header>
+
+
+
+      <div class="login">
+         <img src="assets/img/login-bg.png" alt="image" class="login__bg">
+
+         <form action="" class="login__form">
+            <h1 class="login__title">Login</h1>
+
+            <div class="login__inputs">
+               <div class="login__box">
+                  <input type="email" placeholder="Email ID" required class="login__input">
+                  <i class="ri-mail-fill"></i>
+               </div>
+
+               <div class="login__box">
+                  <input type="password" placeholder="Password" required class="login__input">
+                  <i class="ri-lock-2-fill"></i>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-box">
+                  <input type="checkbox" class="login__check-input" id="user-check">
+                  <label for="user-check" class="login__check-label">Remember me</label>
+               </div>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <div class="login__register">
+               Don't have an account? <a href="#">Register</a>
+            </div>
+         </form>
+      </div>
+   </body>
 </html>
